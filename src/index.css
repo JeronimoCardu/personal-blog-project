@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-ExtraBold.ttf);
+  font-family: DMSansExtraBold;
+}
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-Bold.ttf);
+  font-family: DMSansBold;
+}
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-SemiBold.ttf);
+  font-family: DMSansSemiBold;
+}
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-Medium.ttf);
+  font-family: DMSansMedium;
+}
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-Regular.ttf);
+  font-family: DMSansRegular;
+}
+@font-face {
+  src: url(assets/fonts/DM_Sans/static/DMSans-Italic.ttf);
+  font-family: DMSansItalic;
+}
+@font-face {
+  src: url(assets/fonts/Fira_Code/static/FiraCode-Regular.ttf);
+  font-family: FiraRegular;
+}
+
+@theme {
+  --color-neutral900: #1c1a19;
+  --color-neutral800: #201e1d;
+  --color-neutral700: #34302d;
+  --color-neutral600: #4a4846;
+  --color-neutral400: #c0bfbf;
+  --color-neutral300: #dedcda;
+  --color-neutral200: #efedeb;
+  --color-neutral100: #fbf9f7;
+  --color-neutral000: #ffffff;
+
+  --color-blue900: #022b4a;
+  --color-blue800: #5792c0;
+  --color-blue700: #75b0de;
+  --color-blue500: #93cefc;
+  --color-blue200: #e1f1fe;
+
+  --color-green900: #132a18;
+  --color-green700: #008531;
+  --color-green500: #9dd3a9;
+  --color-green200: #e9f5ea;
+
+  --color-yellow900: #4a3003;
+  --color-yellow700: #ea9806;
+  --color-yellow500: #facc79;
+  --color-yellow200: #fff5e1;
+
+  --color-red600: #d92d20;
+  --color-red400: #f04438;
+}
+@layer components {
+  
+
+  .textPreset1 {
+    font-family: DMSansExtraBold;
+    font-size: 2.5em;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+  .textPreset2 {
+  }
+  .textPreset3 {
+  }
+  .textPreset4 {
+  }
+  .textPreset5 {
+  }
+  .textPreset6 {
+  }
+  .textPreset7 {
+  }
+  .textPreset8 {
+  }
+  .textPreset9 {
+  }
+}
