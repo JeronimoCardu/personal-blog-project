@@ -10,6 +10,13 @@ html,
   box-sizing: border-box;
 }
 
+html.light{
+  background-color: var(--color-neutral100);
+}
+html.dark{
+  background-color: var(--color-neutral900);
+}
+
 @font-face {
   src: url(assets/fonts/DM_Sans/static/DMSans-ExtraBold.ttf);
   font-family: DMSansExtraBold;
@@ -39,7 +46,7 @@ html,
   font-family: FiraRegular;
 }
 
-@theme {
+:root {
   --color-neutral900: #1c1a19;
   --color-neutral800: #201e1d;
   --color-neutral700: #34302d;
@@ -68,10 +75,17 @@ html,
 
   --color-red600: #d92d20;
   --color-red400: #f04438;
-}
-@layer components {
-  
 
+  
+}
+
+@theme{
+  /* Resposive */
+  --breakpoint-desktop: 72rem;
+  --breakpoint-tablet: 48rem;
+}
+
+@layer components {
   .textPreset1 {
     font-family: DMSansExtraBold;
     font-size: 2.5em;
