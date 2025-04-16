@@ -10,11 +10,11 @@ html,
   box-sizing: border-box;
 }
 
-html.light{
-  background-color: var(--color-neutral100);
+html.light {
+  background-color: var(--color-neutral-100);
 }
-html.dark{
-  background-color: var(--color-neutral900);
+html.dark {
+  background-color: var(--color-neutral-900);
 }
 
 @font-face {
@@ -47,39 +47,36 @@ html.dark{
 }
 
 :root {
-  --color-neutral900: #1c1a19;
-  --color-neutral800: #201e1d;
-  --color-neutral700: #34302d;
-  --color-neutral600: #4a4846;
-  --color-neutral400: #c0bfbf;
-  --color-neutral300: #dedcda;
-  --color-neutral200: #efedeb;
-  --color-neutral100: #fbf9f7;
-  --color-neutral000: #ffffff;
+  --color-neutral-900: #1c1a19;
+  --color-neutral-800: #201e1d;
+  --color-neutral-700: #34302d;
+  --color-neutral-600: #4a4846;
+  --color-neutral-400: #c0bfbf;
+  --color-neutral-300: #dedcda;
+  --color-neutral-200: #efedeb;
+  --color-neutral-100: #fbf9f7;
 
-  --color-blue900: #022b4a;
-  --color-blue800: #5792c0;
-  --color-blue700: #75b0de;
-  --color-blue500: #93cefc;
-  --color-blue200: #e1f1fe;
+  --color-blue-900: #022b4a;
+  --color-blue-800: #5792c0;
+  --color-blue-700: #75b0de;
+  --color-blue-500: #93cefc;
+  --color-blue-200: #e1f1fe;
 
-  --color-green900: #132a18;
-  --color-green700: #008531;
-  --color-green500: #9dd3a9;
-  --color-green200: #e9f5ea;
+  --color-green-900: #132a18;
+  --color-green-700: #008531;
+  --color-green-500: #9dd3a9;
+  --color-green-200: #e9f5ea;
 
-  --color-yellow900: #4a3003;
-  --color-yellow700: #ea9806;
-  --color-yellow500: #facc79;
-  --color-yellow200: #fff5e1;
+  --color-yellow-900: #4a3003;
+  --color-yellow-700: #ea9806;
+  --color-yellow-500: #facc79;
+  --color-yellow-200: #fff5e1;
 
-  --color-red600: #d92d20;
-  --color-red400: #f04438;
-
-  
+  --color-red-600: #d92d20;
+  --color-red-400: #f04438;
 }
 
-@theme{
+@theme {
   /* Resposive */
   --breakpoint-desktop: 72rem;
   --breakpoint-tablet: 48rem;
@@ -87,25 +84,70 @@ html.dark{
 
 @layer components {
   .textPreset1 {
-    font-family: DMSansExtraBold;
-    font-size: 2.5em;
-    line-height: 130%;
-    letter-spacing: -1px;
+    font-family: DMSansExtraBold !important;
+    font-size: 2.5em !important;
+    line-height: 130% !important;
+    letter-spacing: -1px !important;
   }
   .textPreset2 {
+    font-family: DMSansExtraBold !important;
+    font-size: 2em !important;
+    line-height: 130% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset3 {
+    font-family: DMSansBold !important;
+    font-size: 1.75em !important;
+    line-height: 130% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset4 {
+    font-family: DMSansSemiBold !important;
+    font-size: 1.5em !important;
+    line-height: 130% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset5 {
+    font-family: DMSansSemiBold !important;
+    font-size: 1.25em !important;
+    line-height: 130% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset6 {
+    font-family: DMSansMedium !important;
+    font-size: 1.125em !important;
+    line-height: 150% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset7 {
+    font-family: DMSansRegular !important;
+    font-size: 1.125em !important;
+    line-height: 150% !important;
+    letter-spacing: -.2px !important;
+  }
+  .textPreset7SemiBold {
+    font-family: DMSansSemiBold !important;
+    font-size: 2em !important;
+    line-height: 130% !important;
+    letter-spacing: -.5px !important;
   }
   .textPreset8 {
+    font-family: DMSansRegular !important;
+    font-size: 1em !important;
+    line-height: 130% !important;
+    letter-spacing: -.2px !important;
+  }
+  .textPreset8Italic {
+    font-family: DMSansItalic !important;
+    font-size: 1em !important;
+    line-height: 130% !important;
+    letter-spacing: -.2px !important;
   }
   .textPreset9 {
+    font-family: FiraRegular !important;
+    font-size: 1em !important;
+    line-height: 146% !important;
+    letter-spacing: -.4px !important;
   }
+  
 }

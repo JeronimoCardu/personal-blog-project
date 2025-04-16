@@ -3,7 +3,7 @@ import Newsletter from "./Newsletter";
 import About from "./About";
 import Blog from "./Blog";
 import Home from "./Home";
-import NavBar from "./NavBar";
+import NavBar from "../components/NavBar";
 
 const router = createBrowserRouter([
   {

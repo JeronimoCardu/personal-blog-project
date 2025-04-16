@@ -12,23 +12,27 @@ export default function NavBar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   return (
     <>
-      <div className="flex z-50 !mx-2 desktop:w-5xl desktop:!mx-auto tablet:!mx-10 !border-1 border-[var(--color-neutral200)]  dark:border-[var(--color-neutral700)] dark:text-neutral000 text-neutral700  dark:!bg-[var(--color-neutral800)] rounded-[0.625em] !my-4 !p-2 bg-[var(--color-neutral000)] justify-between ">
+      <div className="desktop:w-2xl desktop:!mx-auto tablet:!mx-10 dark:text-neutral000 text-neutral700 z-50 !mx-2 !my-4 flex justify-between rounded-[0.625em] !border-1 border-neutral-200 bg-white !p-2 transition ease-in-out dark:border-neutral-700 dark:!bg-neutral-800">
         <Avatar.Root shape="rounded" size="xl">
           <Avatar.Fallback name="Paulina" />
           <Avatar.Image src="src/assets/images/image-avatar.jpg" />
         </Avatar.Root>
         <div className="flex items-center gap-6">
           <div
-            className={`${showMenu ? "tablet:!hidden flex justify-center items-center bg-[var(--color-neutral700)] cursor-pointer  w-[48px] h-[48px] rounded-[0.625em] dark:text-[var(--color-neutral900)] text-white dark:bg-[var(--color-neutral000)]" : "tablet:!hidden"}`}
+            className={`${showMenu ? "tablet:!hidden flex h-[3em] w-[3em] cursor-pointer items-center justify-center rounded-[0.625em] bg-neutral-700 text-white dark:bg-white dark:text-neutral-900" : "tablet:!hidden"}`}
             onClick={() => setShowMenu(!showMenu)}
           >
-            {showMenu ? <IoMdClose className="size-[2em]" /> : <RxHamburgerMenu className="size-[2em]"  />}
+            {showMenu ? (
+              <IoMdClose className="size-[2em]" />
+            ) : (
+              <RxHamburgerMenu className="size-[2em]" />
+            )}
           </div>
 
           <Links divice="tablet" />
           <ClientOnly fallback={<Skeleton boxSize="8" />}>
             <IconButton
-              className="bg-[var(--color-neutral100)] dark:bg-[var(--color-neutral900)]"
+              className="bg-neutral-100 dark:bg-neutral-900"
               onClick={toggleColorMode}
               rounded={8}
               variant="outline"
