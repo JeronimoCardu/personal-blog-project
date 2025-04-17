@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import imgX from "src/assets/images/logo-x.svg";
+import imgGitHub from "src/assets/images/logo-github.svg";
+import imgLinkedIn from "src/assets/images/logo-linkedin.svg";
+import imgFrontendMentor from "src/assets/images/logo-frontend-mentor.svg";
 
 type Props = {
   part?: string;
@@ -13,7 +17,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="personal-blog/src/assets/images/logo-x.svg"
+          src={imgX}
           alt="X"
         />
       </Link>
@@ -23,7 +27,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="personal-blog/src/assets/images/logo-github.svg"
+          src={imgGitHub}
           alt="GitHub"
         />
       </Link>
@@ -33,7 +37,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="personal-blog/src/assets/images/logo-linkedin.svg"
+          src={imgLinkedIn}
           alt="LinkedIn"
         />
       </Link>
@@ -43,7 +47,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="personal-blog/src/assets/images/logo-frontend-mentor.svg"
+          src={imgFrontendMentor}
           alt="FrontendMentor"
         />
       </Link>
