@@ -13,7 +13,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="/src/assets/images/logo-x.svg"
+          src="personal-blog/src/assets/images/logo-x.svg"
           alt="X"
         />
       </Link>
@@ -23,7 +23,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="/src/assets/images/logo-github.svg"
+          src="personal-blog/src/assets/images/logo-github.svg"
           alt="GitHub"
         />
       </Link>
@@ -33,7 +33,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="/src/assets/images/logo-linkedin.svg"
+          src="personal-blog/src/assets/images/logo-linkedin.svg"
           alt="LinkedIn"
         />
       </Link>
@@ -43,7 +43,7 @@ function Media({ part }: Props) {
       >
         <img
           className="dark:invert"
-          src="/src/assets/images/logo-frontend-mentor.svg"
+          src="personal-blog/src/assets/images/logo-frontend-mentor.svg"
           alt="FrontendMentor"
         />
       </Link>
