@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Media from "@/components/Media";
+import imgWorkspace from "../../assets/images/image-workspace-large.jpg";
 
 export default function About() {
   return (
@@ -60,7 +61,7 @@ export default function About() {
           </p>
           <img
             className="!mb-8 rounded-[.3em]"
-            src="src/assets/images/image-workspace-large.jpg"
+            src={imgWorkspace}
             alt="workspace"
           />
           <p className="textPreset7 !mb-8 text-neutral-600 dark:text-neutral-400">
