@@ -8,6 +8,7 @@ html,
   height: 100%;
   font-size: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html.light {
@@ -93,61 +94,60 @@ html.dark {
     font-family: DMSansExtraBold !important;
     font-size: 2em !important;
     line-height: 130% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset3 {
     font-family: DMSansBold !important;
     font-size: 1.75em !important;
     line-height: 130% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset4 {
     font-family: DMSansSemiBold !important;
     font-size: 1.5em !important;
     line-height: 130% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset5 {
     font-family: DMSansSemiBold !important;
     font-size: 1.25em !important;
     line-height: 130% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset6 {
     font-family: DMSansMedium !important;
     font-size: 1.125em !important;
     line-height: 150% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset7 {
     font-family: DMSansRegular !important;
     font-size: 1.125em !important;
     line-height: 150% !important;
-    letter-spacing: -.2px !important;
+    letter-spacing: -0.2px !important;
   }
   .textPreset7SemiBold {
     font-family: DMSansSemiBold !important;
-    font-size: 2em !important;
+    font-size: 1.125em !important;
     line-height: 130% !important;
-    letter-spacing: -.5px !important;
+    letter-spacing: -0.5px !important;
   }
   .textPreset8 {
     font-family: DMSansRegular !important;
     font-size: 1em !important;
     line-height: 130% !important;
-    letter-spacing: -.2px !important;
+    letter-spacing: -0.2px !important;
   }
   .textPreset8Italic {
     font-family: DMSansItalic !important;
     font-size: 1em !important;
     line-height: 130% !important;
-    letter-spacing: -.2px !important;
+    letter-spacing: -0.2px !important;
   }
   .textPreset9 {
     font-family: FiraRegular !important;
     font-size: 1em !important;
     line-height: 146% !important;
-    letter-spacing: -.4px !important;
+    letter-spacing: -0.4px !important;
   }
-  
 }

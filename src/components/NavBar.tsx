@@ -16,7 +16,7 @@ export default function NavBar() {
         <Avatar.Root shape="rounded" size="xl">
           <Avatar.Fallback name="Paulina" />
           <Avatar.Image src="src/assets/images/image-avatar.jpg" />
-        </Avatar.Root>
+        </Avatar.Root>  
         <div className="flex items-center gap-6">
           <div
             className={`${showMenu ? "tablet:!hidden flex h-[3em] w-[3em] cursor-pointer items-center justify-center rounded-[0.625em] bg-neutral-700 text-white dark:bg-white dark:text-neutral-900" : "tablet:!hidden"}`}
@@ -44,7 +44,17 @@ export default function NavBar() {
         </div>
       </div>
       {showMenu && <Links divice="mobile" />}
-      <div>
+      <div className="desktop:w-2xl desktop:!mx-auto tablet:!mx-10 !mx-4 !border-x-1 !px-2">
+        <img
+          className="desktop:!block pointer-events-none absolute left-[-15%] !hidden w-[30%] max-w-none select-none"
+          src={`/src/assets/images/pattern-${colorMode}.svg`}
+          alt=""
+        />
+        <img
+          className="desktop:!block pointer-events-none absolute top-0 right-[-15%] !hidden w-[30%] max-w-none select-none"
+          src={`/src/assets/images/pattern-${colorMode}.svg`}
+          alt=""
+        />
         <Outlet />
       </div>
     </>

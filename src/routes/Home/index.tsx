@@ -1,24 +1,12 @@
 import Media from "@/components/Media";
-import articles from "../../../starter-code/data.json";
+import articles from "../../data.json";
 import Article from "@/components/Article";
 import { NavLink } from "react-router-dom";
 import Footer from "@/components/Footer";
-import { useColorMode } from "@/components/ui/color-mode";
 
 export default function Home() {
-  const { colorMode } = useColorMode();
   return (
-    <div className="desktop:w-2xl desktop:!mx-auto tablet:!mx-10 !mx-4 !border-x-1 !px-2">
-      <img
-        className="desktop:!block pointer-events-none absolute left-[-15%] !hidden w-[30%] max-w-none select-none"
-        src={`/src/assets/images/pattern-${colorMode}.svg`}
-        alt=""
-      />
-      <img
-        className="desktop:!block pointer-events-none absolute top-0 right-[-15%] !hidden w-[30%] max-w-none select-none"
-        src={`/src/assets/images/pattern-${colorMode}.svg`}
-        alt=""
-      />
+    <>
       <main>
         <section className="!py-10">
           <h1 className="textPreset2 text-neutral-700 underline !decoration-blue-500 decoration-10 -underline-offset-0 dark:text-white dark:!decoration-blue-700">
@@ -50,7 +38,15 @@ export default function Home() {
           </h1>
           {articles.map((art, index) => {
             if (index < 5) {
-              return <Article article={art} />;
+              return (
+                <div key={index} className="!mb-[2em]">
+                  <Article
+                    slug={art.slug}
+                    title={art.title}
+                    publishedAt={art.publishedAt}
+                  />
+                </div>
+              );
             }
           })}
           <NavLink
@@ -63,6 +59,6 @@ export default function Home() {
         <hr />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
